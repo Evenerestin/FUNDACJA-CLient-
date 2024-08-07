@@ -1,0 +1,157 @@
+$about: var(--accent-yellow);
+$treatment: var(--accent-green);
+$gallery: var(--accent-green);
+$gratitude: var(--accent-yellow);
+$foundation: var(--accent-blue);
+$help: var(--accent-orange);
+
+nav {
+  width: 100%;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 100;
+
+  button {
+    border: none;
+    background: none;
+  }
+
+  button.siteLogo {
+    padding: 1rem 0.5rem;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-family: 'Varela Round', sans-serif;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    font-weight: 800;
+    white-space: nowrap;
+    span {
+      font-size: 0.6rem;
+      letter-spacing: 3px;
+      font-weight: 500;
+    }
+    color: var(--accent-primary);
+  }
+
+  .navigation ul {
+    gap: 2rem;
+    align-items: center;
+  }
+
+  button.menuItem {
+    padding: 1rem;
+    font-size: 0.8rem;
+    position: relative;
+    text-transform: uppercase;
+    transition: font-weight 0.3s ease-out;
+    &:hover {
+      color: var(--accent-secondary);
+      // color: rgb(87, 87, 242);
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 1px;
+      background-color: var(--accent-secondary);
+      bottom: 5px;
+      left: 0;
+      transition: width 1s ease;
+    }
+    &:hover::before {
+      width: 100%;
+    }
+    &.active {
+      font-weight: 600;
+      color: var(--accent-secondary);
+    }
+  }
+
+  button.menuItem {
+    &.about {
+      &:hover {
+        color: $about;
+      }
+      &::before {
+        background-color: $about;
+      }
+      &.active {
+        color: $about;
+      }
+    }
+    &.treatment {
+      &:hover {
+        color: $treatment;
+      }
+      &::before {
+        background-color: $treatment;
+      }
+      &.active {
+        color: $treatment;
+      }
+    }
+    &.gallery {
+      &:hover {
+        // color: rgb(183, 132, 209);
+        color: $gallery;
+      }
+      &::before {
+        background-color: $gallery;
+      }
+      &.active {
+        color: $gallery;
+      }
+    }
+    &.gratitude {
+      &:hover {
+        // color: rgb(250, 136, 136);
+        color: $gratitude;
+      }
+      &::before {
+        background-color: $gratitude;
+      }
+      &.active {
+        color: $gratitude;
+      }
+    }
+    &.foundation {
+      &:hover {
+        color: $foundation;
+      }
+      &::before {
+        background-color: $foundation;
+      }
+      &.active {
+        color: $foundation;
+      }
+    }
+    &.help {
+      &:hover {
+        color: $help;
+      }
+      &::before {
+        background-color: $help;
+      }
+      &.active {
+        color: $help;
+      }
+    }
+  }
+
+  a.foundationLogo {
+    height: 5rem;
+    width: auto;
+    margin-left: 3rem;
+    img {
+      height: 100%;
+      width: auto;
+      border-radius: 50%;
+    }
+  }
+}

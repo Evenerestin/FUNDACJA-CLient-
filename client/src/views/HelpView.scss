@@ -1,0 +1,96 @@
+$accent: var(--accent-orange);
+$font: var(--font-orange);
+
+#helpView {
+  .waves {
+    svg {
+      position: fixed;
+      width: 150%;
+      left: -10%;
+      top: 1rem;
+      opacity: 0.2;
+      z-index: -1;
+      transform: rotate(180deg);
+      fill: var(--accent-primary);
+      fill: var(--accent-secondary);
+      // &#firstWave {
+      //   opacity: 0.3;
+      //   z-index: 10;
+      // }
+    }
+  }
+
+  img {
+    // height: 85vh;
+    // width: auto;
+    // bottom: -2rem;
+    // right: -2rem;
+    // -----
+    // height: auto;
+    // width: 20vw;
+    // bottom: 50%;
+    // transform: translateY(55%);
+    // right: 5vw;
+    // ----
+    height: 100vh;
+    width: auto;
+    right: 0;
+    bottom: -4rem;
+    // bottom: 50%;
+    // transform: translateY(57%);
+    right: 3vw;
+    // --------------
+    opacity: 1;
+    position: fixed;
+    border-radius: 0;
+    // mask-image: url('/blobHelp88.svg');
+    // mask-image: url('/blobHelp111.svg');
+    mask-position: bottom;
+    mask-repeat: no-repeat;
+  }
+  .content {
+    width: 70vw;
+    margin-left: 3vw;
+    margin-right: auto;
+    > div {
+      width: 100%;
+    }
+    h1 {
+      color: $font;
+      color: var(--accent-primary);
+    }
+    // img {
+    //   height: 70vh;
+    //   width: auto;
+    //   // margin-left: 5rem;
+    //   opacity: 0;
+    // }
+
+    .methods {
+      justify-content: space-between;
+      #percentageIcon {
+        height: 1.5rem;
+        width: auto;
+        display: inline-block;
+        margin: 3rem 0.5rem 0 0;
+      }
+      p {
+        white-space: wrap;
+        color: var(--dark);
+        padding-top: 1.5rem;
+      }
+      .column {
+        width: 40%;
+        & > div {
+          h3 {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            margin-top: 3rem;
+          }
+          color: $accent;
+          fill: $accent;
+        }
+      }
+    }
+  }
+}

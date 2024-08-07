@@ -1,0 +1,68 @@
+$accent: var(--accent-blue);
+$font: var(--font-blue);
+
+#foundationView {
+  // height: 100vh;
+  // background: var(--light);
+  //   background: url(/foundation.svg) center/cover no-repeat;
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  svg {
+    fill: $accent;
+    position: fixed;
+    width: 80vw;
+    height: 75rem;
+    opacity: 0.4;
+    z-index: -1;
+    animation: rotate 60s linear infinite;
+
+    &#leftCorner {
+      left: -27rem;
+      bottom: -40rem;
+      animation-delay: -40s;
+    }
+    &#rightCorner {
+      top: -33rem;
+      right: -30rem;
+      // right: clamp(-35rem, -30vw, -10rem);
+    }
+  }
+
+  .content {
+    flex-direction: column;
+    max-width: 90vw;
+    justify-content: space-evenly;
+    height: 80vh;
+    h1 {
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      color: $font;
+    }
+    h3 {
+      font-size: 1.2rem;
+      margin: 1rem 5vw;
+      text-align: center;
+      color: var(--dark);
+    }
+    p {
+      // margin: 0 5vw;
+      color: var(--dark);
+    }
+    a {
+      color: var(--accent-secondary);
+      color: $font;
+    }
+    img {
+      width: 60%;
+      max-width: 65rem;
+      height: auto;
+      border-radius: 1rem;
+      border: 0.2rem solid white;
+    }
+  }
+}

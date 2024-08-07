@@ -1,0 +1,76 @@
+$accent: var(--accent-green);
+$font: var(--font-green);
+
+#treatmentView {
+  svg {
+    position: fixed;
+    fill: $accent;
+    &#firstMacaroni {
+      width: 80vw;
+      height: 80vw;
+      transform: rotate(80deg);
+      right: -30rem;
+      bottom: -40vh;
+      bottom: -60vh;
+      opacity: 0.5;
+      z-index: -1;
+      z-index: 11;
+    }
+    &#secondMacaroni {
+      width: 30vw;
+      height: 30vw;
+      opacity: 0.8;
+      transform: rotate(0deg);
+      top: -5vh;
+      left: -10vw;
+      z-index: -1;
+    }
+    &#thirdMacaroni {
+      width: 10rem;
+      height: 10rem;
+      top: 25vh;
+      right: 30vw;
+      opacity: 0.6;
+      z-index: 11;
+      transform: rotate(90deg);
+    }
+    &#fourthMacaroni {
+      width: 5rem;
+      height: 5rem;
+      top: 30vh;
+      left: 0vw;
+      opacity: 0.9;
+      transform: rotate(-50deg);
+    }
+  }
+
+  img {
+    position: fixed;
+    top: 0;
+    top: 7rem;
+    right: -0.5rem;
+    width: 40vw;
+    mask-image: url('maskTreatment.svg');
+    mask-repeat: no-repeat;
+  }
+  .content {
+    .header {
+      position: absolute;
+      padding: 0 0 0 clamp(1rem, 5vw, 5rem);
+      left: 0;
+      margin-left: 4rem;
+      width: 55vw;
+      max-width: 100vw;
+      h1 {
+        color: $font;
+      }
+    }
+    .textWrapper {
+      width: 40vw;
+      height: 50vh;
+      background-color: red;
+      float: right;
+      shape-outside: circle(100% at 30% 10%);
+    }
+  }
+}

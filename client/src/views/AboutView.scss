@@ -1,0 +1,72 @@
+$accent: var(--accent-yellow);
+$font: var(--font-yellow);
+
+#aboutView {
+  svg {
+    fill: $accent;
+    position: fixed;
+    z-index: -1;
+    &#first {
+      width: 30rem;
+      height: 30rem;
+      left: -10rem;
+      bottom: 10vh;
+      opacity: 1;
+    }
+    &#second {
+      width: 15rem;
+      height: 15rem;
+      left: 10vw;
+      bottom: -20vh;
+      opacity: 0.4;
+      z-index: 10;
+    }
+    &#third {
+      opacity: 1;
+      height: 8rem;
+      width: 8rem;
+      bottom: 20vh;
+      left: 28vw;
+      z-index: 10;
+    }
+    &#fourth {
+      height: 40rem;
+      width: 40rem;
+      right: -10vw;
+      bottom: -35vh;
+      opacity: 0.6;
+    }
+    &#fifth {
+      height: 30rem;
+      width: 30rem;
+      opacity: 0.4;
+      z-index: 20;
+      left: -10vw;
+      bottom: 30vh;
+      transform: rotate(30deg);
+    }
+  }
+
+  .content {
+    .header {
+      padding: 0 clamp(1rem, 2vw, 8rem);
+    }
+    h1 {
+      color: $font;
+      font-size: 3rem;
+      // margin-bottom: 2rem;
+    }
+    img {
+      width: 35vw;
+      height: auto;
+      // border-radius: 1rem;
+      margin-right: 1rem;
+      // border: 0.5rem solid white;
+      mask-image: url("maskAbout.svg");
+      mask-repeat: no-repeat;
+    }
+    p {
+      margin-top: 2rem;
+    }
+  }
+}

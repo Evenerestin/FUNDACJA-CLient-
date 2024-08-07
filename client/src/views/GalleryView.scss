@@ -1,0 +1,17 @@
+#galleryView {
+  margin-top: 9rem;
+  margin-bottom: 2rem;
+  .galleryContent {
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    // gap: 2rem;
+    img {
+      object-fit: cover;
+      margin-bottom: 1rem;
+      width: 25vw;
+      height: 20vw;
+      border-radius: 2px;
+    }
+  }
+}

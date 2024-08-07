@@ -1,0 +1,96 @@
+#homeView {
+  height: 100vh;
+  background: url(/homeView.jpg) center/cover no-repeat;
+
+  header {
+    height: 100%;
+    width: 100%;
+
+    // background-color: hsla(228, 100%, 80%, 0.5);
+    // background-image: radial-gradient(at 62% 30%, hsla(25, 69%, 71%, 0.8) 0px, transparent 50%),
+    //   radial-gradient(at 7% 2%, hsla(187, 74%, 75%, 0.5) 0px, transparent 50%),
+    //   radial-gradient(at 19% 19%, hsla(7, 76%, 79%, 0.2) 0px, transparent 50%),
+    //   radial-gradient(at 59% 50%, hsla(248, 76%, 64%, 0.8) 0px, transparent 40%),
+    //   radial-gradient(at 72% 61%, hsla(188, 87%, 63%, 0.7) 0px, transparent 50%),
+    //   radial-gradient(at 0% 16%, hsla(295, 92%, 75%, 0.3) 0px, transparent 50%);
+
+    background-color: rgba(255, 167, 153, 0.35);
+    background-image: radial-gradient(at 45% 37%, hsla(41, 78%, 74%, 0.5) 0px, transparent 50%),
+      radial-gradient(at 95% 15%, hsla(88, 96%, 78%, 0.3) 0px, transparent 50%),
+      radial-gradient(at 97% 7%, hsla(61, 65%, 69%, 0.7) 0px, transparent 50%),
+      radial-gradient(at 23% 82%, hsla(236, 99%, 66%, 0.6) 0px, transparent 50%),
+      radial-gradient(at 95% 50%, hsla(303, 85%, 62%, 0.7) 0px, transparent 70%),
+      radial-gradient(at 90% 80%, hsla(135, 96%, 78%, 0.8) 0px, transparent 50%);
+
+    // background-size: 200%;
+    // animation: backgroundPosition 2s infinite alternate;
+    // @keyframes backgroundPosition {
+    //   0% {
+    //     background-position: left;
+    //   }
+    //   100% {
+    //     background-position: right;
+    //   }
+    // }
+
+    .heading {
+      width: 60vw;
+      height: 100%;
+      padding-top: 7rem;
+      margin-left: 30vw;
+      align-items: center;
+      .title {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        h1 {
+          font-size: 6rem;
+          color: white;
+          // color: rgb(45, 45, 45);
+          font-family: 'Varela Round', sans-serif;
+          text-shadow: none;
+        }
+        #percentageIcon {
+          width: 15rem;
+          height: auto;
+          fill: white;
+          // fill: rgb(45, 45, 45);
+          margin: 0 2rem;
+        }
+      }
+      button {
+        width: fit-content;
+        padding: 1.5rem 4rem;
+        margin: 4rem 0;
+        border-radius: 5rem;
+        border: none;
+        border: 5px solid rgb(45, 45, 45);
+        border: 5px solid var(--accent-primary);
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: var(--accent-secondary);
+        color: rgb(45, 45, 45);
+        color: var(--accent-primary);
+        background: var(--accent-primary);
+        background: transparent;
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 50px rgba(255, 255, 255, 0.3);
+        position: relative;
+        transition: all 0.5s ease;
+        &:hover {
+          color: white;
+          // border: 5px solid white;
+          background: linear-gradient(340deg, rgb(0, 82, 158, 0.1), rgb(94, 110, 187, 0.2));
+          background: linear-gradient(340deg, var(--accent-primary), rgb(94, 110, 187, 0.2));
+          transform: scale(1.05);
+        }
+      }
+      span {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
