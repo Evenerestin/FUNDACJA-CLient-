@@ -22,17 +22,6 @@
       radial-gradient(at 95% 50%, hsla(303, 85%, 62%, 0.7) 0px, transparent 70%),
       radial-gradient(at 90% 80%, hsla(135, 96%, 78%, 0.8) 0px, transparent 50%);
 
-    // background-size: 200%;
-    // animation: backgroundPosition 2s infinite alternate;
-    // @keyframes backgroundPosition {
-    //   0% {
-    //     background-position: left;
-    //   }
-    //   100% {
-    //     background-position: right;
-    //   }
-    // }
-
     .heading {
       width: 60vw;
       height: 100%;
@@ -47,7 +36,6 @@
         h1 {
           font-size: 6rem;
           color: white;
-          // color: rgb(45, 45, 45);
           font-family: 'Varela Round', sans-serif;
           text-shadow: none;
         }
@@ -55,7 +43,6 @@
           width: 15rem;
           height: auto;
           fill: white;
-          // fill: rgb(45, 45, 45);
           margin: 0 2rem;
         }
       }
@@ -82,7 +69,6 @@
         transition: all 0.5s ease;
         &:hover {
           color: white;
-          // border: 5px solid white;
           background: linear-gradient(340deg, rgb(0, 82, 158, 0.1), rgb(94, 110, 187, 0.2));
           background: linear-gradient(340deg, var(--accent-primary), rgb(94, 110, 187, 0.2));
           transform: scale(1.05);

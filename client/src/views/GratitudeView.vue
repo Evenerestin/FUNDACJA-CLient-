@@ -22,7 +22,7 @@ export default {
         <h1>Serdeczne podziękowania</h1>
         <h3>
           Z całego serca pragniemy wyrazić naszą wdzięczność wszystkim, którzy okazali nam wsparcie
-          i pomoc, zarówno w tych ciężkich, jak i spokojnych chwilach.
+          i pomoc.
         </h3>
       </div>
       <div class="secondPara flexColumn">
@@ -42,7 +42,7 @@ export default {
           Największe podziękowania należą się naszym ukochanym rodzicom. Jesteście niezastąpionym
           oparciem i wzorem do naśladowania. Wasza troska, poświęcenie i bezgraniczna miłość dały
           Anetce możliwie najlepsze życie, pełne radości i uśmiechu. Nie było by jej tu z nami,
-          gdyby nie wasza walka, oddanie i nieustępliwość.
+          gdyby nie wasze oddanie.
         </p>
         <!-- <h3>Z wyrazami wdzięczności,</h3>
         <h3>Anetka wraz z rodzeństwem</h3> -->

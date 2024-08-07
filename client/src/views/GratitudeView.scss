@@ -1,18 +1,14 @@
 $accent: var(--accent-yellow);
-// $accent: rgb(228, 113, 113);
 $font: var(--font-yellow);
 
 #gratitudeView {
   display: block;
-  // height: 100vh;
   svg {
     fill: $accent;
     position: fixed;
-    // z-index: -1;
     &#first {
       width: 20rem;
       height: auto;
-      // left: 2rem;
       left: -4rem;
       top: 20%;
       opacity: 0.6;
@@ -24,7 +20,6 @@ $font: var(--font-yellow);
       top: -30%;
       left: 20vw;
       z-index: -1;
-      // z-index: 10;
       opacity: 0.8;
     }
     &#third {
@@ -33,7 +28,6 @@ $font: var(--font-yellow);
       top: 50%;
       left: 5vw;
       z-index: 10;
-      // opacity: 0.2;
     }
     &#fourth {
       top: -40%;
@@ -60,23 +54,16 @@ $font: var(--font-yellow);
     mask-repeat: no-repeat;
     bottom: 0;
     left: 0;
-    // left: -2rem;
-    // left: -10rem;
     mask-image: url('/maskGratitude.svg');
-    // mask-image: url('/blobGrat333.svg');
     mask-position: bottom;
   }
 
   .content {
     display: block;
-    // height: 100vh;
     width: 62vw;
     margin-left: auto;
-    // padding-top: 10rem;
-    // padding-left: 10rem;
     h1 {
       color: $accent;
-      // margin-bottom: 2rem;
     }
     p:last-of-type {
       margin-bottom: 4rem;

@@ -65,12 +65,5 @@ $font: var(--font-green);
         color: $font;
       }
     }
-    .textWrapper {
-      width: 40vw;
-      height: 50vh;
-      background-color: red;
-      float: right;
-      shape-outside: circle(100% at 30% 10%);
-    }
   }
 }
