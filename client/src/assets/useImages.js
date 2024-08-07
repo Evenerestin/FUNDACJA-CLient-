@@ -21,7 +21,7 @@ export function useImages() {
     { src: '/gallery/0017.jpg' },
     { src: '/gallery/0018.jpg' },
     { src: '/gallery/0019.jpg' },
-    { src: '/gallery/0020.jpg' },
+    // { src: '/gallery/0020.jpg' },
     { src: '/gallery/0021.jpg' },
     { src: '/gallery/0022.jpg' },
     { src: '/gallery/0023.jpg' },
@@ -51,7 +51,7 @@ export function useImages() {
     { src: '/gallery/0047.jpg' },
     { src: '/gallery/0048.jpg' },
     { src: '/gallery/0049.jpg' },
-    { src: '/gallery/00450.jpg' },
+    // { src: '/gallery/0050.jpg' }
   ])
   return { images }
 }
