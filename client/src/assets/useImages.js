@@ -14,7 +14,7 @@ export function useImages() {
     { src: '/gallery/III/DSC09523.JPG' },
     { src: '/gallery/III/DSC09837.JPG' },
     { src: '/gallery/III/DSC09852.JPG' },
-    { src: '/gallery/III/IMG_20200904_142937.jpg' },
+    { src: '/gallery/III/IMG_20200904.jpg' },
     { src: '/gallery/III/P1010060.JPG' },
     // { src: '/gallery/II/2013-12-01 20.40.04.JPG' },
     { src: '/gallery/II/P1010056.JPG' },
