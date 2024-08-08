@@ -59,6 +59,7 @@ $font: var(--font-yellow);
   }
 
   .content {
+    margin-top: 10rem;
     display: block;
     width: 62vw;
     margin-left: auto;
@@ -77,10 +78,18 @@ $font: var(--font-yellow);
       margin-right: auto;
       width: 45vw;
     }
-    img:nth-of-type(1) {
-      margin-left: auto;
-      width: 20vw;
-      height: auto;
+    .signature {
+      margin: 3rem 5rem 0 auto;
+      flex-wrap: nowrap;
+      align-items: center;
+      h3 {
+        margin-top: 0;
+      }
+      svg#gratitudeSignature {
+        height: 10rem;
+        width: auto;
+        margin-top: 2rem;
+      }
     }
   }
 }

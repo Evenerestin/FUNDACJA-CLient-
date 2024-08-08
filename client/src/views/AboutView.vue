@@ -10,7 +10,7 @@ export default {
 
 <template>
   <div id="aboutView" class="view">
-      <AnimatedBlobs />
+    <AnimatedBlobs />
     <div class="content">
       <img src="/aboutView.jpg" alt="" />
       <div class="header">

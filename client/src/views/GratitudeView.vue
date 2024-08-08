@@ -1,14 +1,16 @@
 <script>
 import { ref } from 'vue'
 import AnimatedBlobs from '../components/AnimatedBlobs.vue'
+import GratitudeSignature from '../components/GratitudeSignature.vue'
 
 export default {
   setup() {
-    const images = ref([{ src: '/gratitudeView.jpg' }, { src: '/dziekujemy.png' }])
+    const images = ref([{ src: '/gratitudeView.jpg' }])
     return { images }
   },
   components: {
-    AnimatedBlobs
+    AnimatedBlobs,
+    GratitudeSignature
   }
 }
 </script>
@@ -35,19 +37,17 @@ export default {
           siłę i nadzieję. Wasza miłość i troska są bezcenne. Dzięki Wam czuliśmy, że nie jesteśmy
           sami .
         </p>
-        <!-- nam siłę do walki i wiarę w lepsze jutro. Dziękujemy za to, że zawsze byliście
-        przy nas, że możemy na Was liczyć w każdej sytuacji. Wasza obecność jest dla nas
-        największym skarbem. -->
         <p>
           Największe podziękowania należą się naszym ukochanym rodzicom. Jesteście niezastąpionym
           oparciem i wzorem do naśladowania. Wasza troska, poświęcenie i bezgraniczna miłość dały
-          Anetce możliwie najlepsze życie, pełne radości i uśmiechu. Nie było by jej tu z nami,
-          gdyby nie wasze oddanie.
+          Anetce możliwie najlepsze życie, pełne radości i uśmiechu.
         </p>
-        <!-- <h3>Z wyrazami wdzięczności,</h3>
-        <h3>Anetka wraz z rodzeństwem</h3> -->
+        <div class="signature flexColumn">
+          <h3>Z wyrazami wdzięczności,</h3>
+          <h3>Anetka wraz z rodzeństwem</h3>
+          <GratitudeSignature />
+        </div>
       </div>
-      <img src="/dziekujemy.png" alt="" class="flex" />
     </div>
   </div>
 </template>
