@@ -18,7 +18,7 @@ export default {
 <template>
   <div id="gratitudeView" class="view">
     <AnimatedBlobs />
-    <img src="/gratitudeView.jpg" alt="" />
+    <img src="/gratitudeView.jpg" alt="Zdjęcie Anetki" />
     <div class="content flexColumn">
       <div class="firstPara">
         <h1>Serdeczne podziękowania</h1>

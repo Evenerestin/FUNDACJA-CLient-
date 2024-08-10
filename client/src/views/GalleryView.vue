@@ -44,7 +44,7 @@ export default {
     <AnimatedMacaroni />
     <div v-if="showModal" class="modalPopUp">
       <div class="modalImage">
-        <img :src="images[selectedImage].src" alt="" />
+        <img :src="images[selectedImage].src" alt="Wybrane zdjęcie z galerii Anetki" />
         <button @click="closeModal" class="close">X</button>
       </div>
       <button @click="selectPrev" class="previous" :disabled="selectedImage === 0">&lt;</button>
@@ -54,7 +54,7 @@ export default {
     </div>
     <div class="galleryContent flex">
       <div v-for="(image, index) in images" :key="index + 1" class="row">
-        <img :src="image.src" :loading="lazy" @click="openModal(index)" />
+        <img :src="image.src" :loading="lazy" @click="openModal(index)" alt="Zdjęcie z galerii Anetki" />
       </div>
     </div>
   </div>

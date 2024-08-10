@@ -20,7 +20,6 @@ export default {
         <RouterLink to="/pomoc">
           <button><span>&rarr;</span>Dowiedz się więcej</button>
         </RouterLink>
-        <!-- <button>Dowiedz się więcej</button> -->
       </div>
     </header>
   </div>

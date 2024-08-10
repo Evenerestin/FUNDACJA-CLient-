@@ -12,7 +12,7 @@ export default {
   <div id="aboutView" class="view">
     <AnimatedBlobs />
     <div class="content">
-      <img src="/aboutView.jpg" alt="" />
+      <img src="/aboutView.jpg" alt="Zdjęcie Anetki" />
       <div class="header">
         <h1>Więcej o naszej małej Anetce</h1>
         <h3>

@@ -31,7 +31,7 @@ export default {
           >
         </h3>
       </div>
-      <img src="/fundacja.jpg" alt="" />
+      <img src="/fundacja.jpg" alt="Banner Fundacji Dzieciom Zdążyć z Pomocą" />
     </div>
   </div>
 </template>
