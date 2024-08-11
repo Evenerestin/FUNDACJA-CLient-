@@ -38,6 +38,11 @@ $font: var(--font-orange);
       color: $font;
       color: var(--accent-primary);
     }
+    // @media screen and (prefers-color-scheme: dark) {
+    //   h1 {
+    //     color: rgb(132, 186, 252);
+    //   }
+    // }
     .methods {
       justify-content: space-between;
       #percentageIcon {
@@ -48,7 +53,6 @@ $font: var(--font-orange);
       }
       p {
         white-space: wrap;
-        color: var(--dark);
         padding-top: 1.5rem;
       }
       .column {

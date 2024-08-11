@@ -22,6 +22,15 @@
       radial-gradient(at 95% 50%, hsla(303, 85%, 62%, 0.7) 0px, transparent 70%),
       radial-gradient(at 90% 80%, hsla(135, 96%, 78%, 0.8) 0px, transparent 50%);
 
+    // @media screen and (prefers-color-scheme: dark) {
+    //   background-image: radial-gradient(at 45% 37%, hsla(41, 31%, 54%, 0.5) 0px, transparent 50%),
+    //     radial-gradient(at 95% 15%, hsla(87, 27%, 42%, 0.3) 0px, transparent 50%),
+    //     radial-gradient(at 97% 7%, hsla(61, 28%, 38%, 0.7) 0px, transparent 50%),
+    //     radial-gradient(at 23% 82%, hsla(236, 53%, 38%, 0.6) 0px, transparent 50%),
+    //     radial-gradient(at 95% 50%, hsla(304, 52%, 32%, 0.7) 0px, transparent 70%),
+    //     radial-gradient(at 90% 80%, hsla(135, 43%, 33%, 0.8) 0px, transparent 50%);
+    // }
+
     .heading {
       width: 60vw;
       height: 100%;
