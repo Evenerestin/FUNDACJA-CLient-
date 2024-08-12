@@ -86,9 +86,10 @@ $font: var(--font-yellow);
         margin-top: 0;
       }
       svg#gratitudeSignature {
+        position: relative;
         height: 10rem;
         width: auto;
-        margin-top: 2rem;
+        // margin-top: 2rem;
       }
     }
   }
