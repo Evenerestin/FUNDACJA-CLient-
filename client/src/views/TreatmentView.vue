@@ -12,8 +12,8 @@ export default {
   <div id="treatmentView" class="view">
     <AnimatedMacaroni />
     <img src="/treatmentView.jpg" alt="Zdjęcie Anetki" />
-    <div class="content">
-      <div class="header">
+    <div class="content flex">
+      <div class="header flexColumn">
         <h1>Leczenie</h1>
         <p class="first">
           <span>

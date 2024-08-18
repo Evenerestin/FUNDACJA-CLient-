@@ -1,52 +1,84 @@
 $accent: var(--accent-blue);
 $font: var(--font-blue);
 
-#foundationView {
-  svg {
-    fill: $accent;
-    position: fixed;
-    width: 80vw;
-    height: 75rem;
-    opacity: 0.4;
-    z-index: -1;
-    animation: rotate 60s linear infinite;
-
-    &#leftCorner {
-      left: -27rem;
-      bottom: -40rem;
-      animation-delay: -40s;
-    }
-    &#rightCorner {
-      top: -33rem;
-      right: -30rem;
-    }
+#foundationView svg {
+  position: fixed;
+  fill: $accent;
+  width: 80vw;
+  height: auto;
+  opacity: 0.4;
+  z-index: -1;
+  animation: rotate 60s linear infinite;
+  &#leftCorner {
+    bottom: -50vw;
+    left: -40vw;
+    animation-delay: -40s;
   }
+  &#rightCorner {
+    top: -40vw;
+    right: -40vw;
+  }
+}
 
-  .content {
-    flex-direction: column;
-    max-width: 90vw;
-    justify-content: space-evenly;
-    height: 80vh;
+#foundationView .content {
+  justify-content: space-evenly;
+  flex-direction: column;
+  max-width: 90vw;
+  min-height: 80vh;
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: $font;
+  }
+  h3 {
+    font-size: 1.2rem;
+    margin: 1rem 5vw;
+    text-align: center;
+  }
+  a {
+    color: var(--accent-secondary);
+    color: $font;
+  }
+}
+
+#foundationView .content img {
+  width: 60%;
+  max-width: 65rem;
+  height: auto;
+  border-radius: 1rem;
+  border: 0.2rem solid white;
+}
+
+// ---------------------------- media tablets ----------------------------
+
+@media screen and (max-width: 1023px) {
+  #foundationView .content {
+    margin-top: 5rem;
     h1 {
-      margin-bottom: 2rem;
-      font-size: 2.5rem;
-      color: $font;
-    }
-    h3 {
-      font-size: 1.2rem;
-      margin: 1rem 5vw;
+      font-size: 2rem;
       text-align: center;
     }
-    a {
-      color: var(--accent-secondary);
-      color: $font;
-    }
     img {
-      width: 60%;
-      max-width: 65rem;
-      height: auto;
-      border-radius: 1rem;
-      border: 0.2rem solid white;
+      width: 80vw;
     }
+  }
+}
+
+// ---------------------------- media phones ----------------------------
+
+@media screen and (max-width: 767px) {
+  #foundationView svg {
+    opacity: 0.3;
+    &#leftCorner {
+      bottom: -40vw;
+      left: -30vw;
+    }
+    &#rightCorner {
+      top: -25vw;
+      right: -30vw;
+    }
+  }
+  #foundationView .content h1 {
+    font-size: 1.5rem;
   }
 }

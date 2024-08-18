@@ -1,69 +1,115 @@
 $accent: var(--accent-yellow);
 $font: var(--font-yellow);
 
-#aboutView {
-  svg {
-    fill: $accent;
+#aboutView svg {
+  fill: $accent;
+  position: fixed;
+  height: auto;
+  z-index: -1;
+  &#firstBlob {
+    width: clamp(15rem, 30vw, 70vh);
+    bottom: 50%;
+    left: -10rem;
+    transform: translateY(50%);
+  }
+  &#secondBlob {
+    width: 15rem;
+    bottom: -20vh;
+    left: 10vw;
+    opacity: 0.4;
+    z-index: 10;
+  }
+  &#thirdBlob {
+    width: 8rem;
+    bottom: 20vh;
+    left: 28vw;
+    z-index: 10;
+  }
+  &#fourthBlob {
+    width: clamp(20rem, 40vw, 60rem);
+    bottom: clamp(-10rem, -15vw, -15vw);
+    right: clamp(-15rem, -10vw, -5rem);
+    opacity: 0.6;
+  }
+  &#fifthBlob {
+    width: 30rem;
+    bottom: 30vh;
+    left: clamp(-5rem, -10vw, 15vw);
+    opacity: 0.4;
+    z-index: 10;
+    transform: rotate(30deg);
+  }
+}
+
+#aboutView .content {
+  .header {
+    padding: 0 clamp(1rem, 2vw, 8rem);
+    margin-left: auto;
+    width: 55vw;
+  }
+  h1 {
+    color: $font;
+    font-size: 3rem;
+  }
+  p {
+    margin-top: 2rem;
+  }
+  img {
     position: fixed;
-    z-index: -1;
-    &#first {
-      width: 30rem;
-      height: 30rem;
-      left: -10rem;
-      bottom: 10vh;
-      opacity: 1;
+    top: 50%;
+    left: 4vw;
+    width: 35vw;
+    height: auto;
+    mask-repeat: no-repeat;
+    mask-image: url('/maskAbout.svg');
+    transform: translateY(-40%);
+  }
+}
+
+// ---------------------------- media phones ----------------------------
+
+@media screen and (max-width: 767px) {
+  #aboutView svg {
+    &#firstBlob {
+      position: absolute;
+      z-index: -1;
     }
-    &#second {
-      width: 15rem;
-      height: 15rem;
+    &#secondBlob {
+      position: absolute;
+      bottom: 5rem;
+      left: 0;
+      width: 30vw;
+      opacity: 0.3;
+      z-index: -1;
+    }
+    &#thirdBlob {
+      position: absolute;
+      top: 15vh;
+      left: 60vw;
+    }
+    &#fourthBlob {
+      z-index: -1;
+    }
+    &#fifthBlob {
       left: 10vw;
-      bottom: -20vh;
-      opacity: 0.4;
-      z-index: 10;
-    }
-    &#third {
-      opacity: 1;
-      height: 8rem;
-      width: 8rem;
-      bottom: 20vh;
-      left: 28vw;
-      z-index: 10;
-    }
-    &#fourth {
-      height: 40rem;
-      width: 40rem;
-      right: -10vw;
-      bottom: -35vh;
-      opacity: 0.6;
-    }
-    &#fifth {
-      height: 30rem;
-      width: 30rem;
-      opacity: 0.4;
-      z-index: 20;
-      left: -10vw;
-      bottom: 30vh;
-      transform: rotate(30deg);
+      top: 5rem;
+      width: 30vw;
+      z-index: -1;
     }
   }
-
-  .content {
+  #aboutView .content {
     .header {
       padding: 0 clamp(1rem, 2vw, 8rem);
-    }
-    h1 {
-      color: $font;
-      font-size: 3rem;
+      width: 70vw;
+      margin: 0;
     }
     img {
-      width: 35vw;
+      position: relative;
+      transform: unset;
+      width: 70vw;
       height: auto;
-      margin-right: 1rem;
-      mask-image: url("/maskAbout.svg");
-      mask-repeat: no-repeat;
-    }
-    p {
-      margin-top: 2rem;
+      object-fit: contain;
+      margin-bottom: 3rem;
     }
   }
 }

@@ -15,20 +15,23 @@ export default {
     <div class="waves">
       <AnimatedWaves />
     </div>
-    <img src="/helpView.jpg" alt="Zdjęcie Anetki" />
     <div class="content">
-      <div>
-        <h1>Czas bez rehabilitacji jest czasem nie do odpracowania.</h1>
-        <h3>
-          Kosztowna i długotrwała terapia to jedyna nadzieja na lepsze życie dla Anetki, dlatego
-          zwracamy się z wielką prośbą o wsparcie finansowe.
-        </h3>
+      <div class="flexColumn">
+        <div class="header">
+          <img src="/helpView.jpg" alt="Zdjęcie Anetki" />
+          <div>
+            <h1>Czas bez rehabilitacji jest czasem nie do odpracowania.</h1>
+            <h3>
+              Kosztowna i długotrwała terapia to jedyna nadzieja na lepsze życie dla Anetki, dlatego
+              zwracamy się z wielką prośbą o wsparcie finansowe.
+            </h3>
+          </div>
+        </div>
         <div class="methods flex">
           <div class="column">
             <div>
               <h3>Darowizny</h3>
             </div>
-            <!-- <h3 class="title">Darowizny</h3> -->
             <p>Fundacja Dzieciom „Zdążyć z Pomocą”</p>
             <p>ul. Łomiańska 5 01-685 Warszawa</p>
             <p>Alior Bank 42 2490 0005 0000 4600 7549 3994</p>
