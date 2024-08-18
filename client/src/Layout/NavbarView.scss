@@ -5,7 +5,7 @@ $gratitude: var(--accent-yellow);
 $foundation: var(--accent-blue);
 $help: var(--accent-orange);
 
-nav {
+#navbarView {
   width: 100%;
   padding: 1rem 2rem;
   justify-content: space-between;
@@ -15,180 +15,182 @@ nav {
   left: 0;
   background: white;
   z-index: 100;
+}
 
-  button {
-    border: none;
-    background: none;
+#navbarView button {
+  border: none;
+  background: none;
+}
+
+#navbarView button.siteLogo {
+  padding: 1rem 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-family: 'Varela Round', sans-serif;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  font-weight: 800;
+  white-space: nowrap;
+  color: var(--accent-primary);
+  span {
+    font-size: 0.6rem;
+    letter-spacing: 3px;
+    font-weight: 500;
   }
+}
 
-  button.siteLogo {
-    padding: 1rem 0.5rem;
-    text-transform: uppercase;
-    font-size: 1.7rem;
-    font-family: 'Varela Round', sans-serif;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 1px;
-    font-weight: 800;
-    white-space: nowrap;
-    span {
-      font-size: 0.6rem;
-      letter-spacing: 3px;
-      font-weight: 500;
-    }
-    color: var(--accent-primary);
+#navbarView button.menuItem {
+  padding: 1rem;
+  font-size: 0.8rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: font-weight 0.3s ease-out;
+  &.active {
+    font-weight: 600;
+    color: var(--accent-secondary);
   }
-
-  .navigation ul {
-    gap: 2rem;
-    align-items: center;
+  &:hover {
+    color: var(--accent-secondary);
   }
+  &::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: var(--accent-secondary);
+    bottom: 5px;
+    left: 0;
+    transition: width 1s ease;
+  }
+  &:hover::before {
+    width: 100%;
+  }
+}
 
-  button.menuItem {
-    padding: 1rem;
-    font-size: 0.8rem;
-    position: relative;
-    text-transform: uppercase;
-    transition: font-weight 0.3s ease-out;
+#navbarView button.menuItem {
+  &.about {
     &:hover {
-      color: var(--accent-secondary);
+      color: $about;
     }
     &::before {
-      position: absolute;
-      content: '';
-      width: 0;
-      height: 1px;
-      background-color: var(--accent-secondary);
-      bottom: 5px;
-      left: 0;
-      transition: width 1s ease;
-    }
-    &:hover::before {
-      width: 100%;
+      background-color: $about;
     }
     &.active {
-      font-weight: 600;
-      color: var(--accent-secondary);
+      color: $about;
     }
   }
-
-  button.menuItem {
-    &.about {
-      &:hover {
-        color: $about;
-      }
-      &::before {
-        background-color: $about;
-      }
-      &.active {
-        color: $about;
-      }
+  &.treatment {
+    &:hover {
+      color: $treatment;
     }
-    &.treatment {
-      &:hover {
-        color: $treatment;
-      }
-      &::before {
-        background-color: $treatment;
-      }
-      &.active {
-        color: $treatment;
-      }
+    &::before {
+      background-color: $treatment;
     }
-    &.gallery {
-      &:hover {
-        color: $gallery;
-      }
-      &::before {
-        background-color: $gallery;
-      }
-      &.active {
-        color: $gallery;
-      }
-    }
-    &.gratitude {
-      &:hover {
-        // color: rgb(250, 136, 136);
-        color: $gratitude;
-      }
-      &::before {
-        background-color: $gratitude;
-      }
-      &.active {
-        color: $gratitude;
-      }
-    }
-    &.foundation {
-      &:hover {
-        color: $foundation;
-      }
-      &::before {
-        background-color: $foundation;
-      }
-      &.active {
-        color: $foundation;
-      }
-    }
-    &.help {
-      &:hover {
-        color: $help;
-      }
-      &::before {
-        background-color: $help;
-      }
-      &.active {
-        color: $help;
-      }
+    &.active {
+      color: $treatment;
     }
   }
-
-  a.foundationLogo {
-    height: 5rem;
-    width: auto;
-    margin-left: 3rem;
-    img {
-      height: 100%;
-      width: auto;
-      border-radius: 50%;
+  &.gallery {
+    &:hover {
+      color: $gallery;
+    }
+    &::before {
+      background-color: $gallery;
+    }
+    &.active {
+      color: $gallery;
     }
   }
-
-  .toggleMobile {
-    margin-left: 2rem;
-    position: relative;
-    height: 4rem;
-    width: 4rem;
-    #hamburger {
-      position: absolute;
-      height: 50px;
-      width: 50px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      stroke: rgb(36, 36, 36);
-      transition: stroke 1s ease;
-      z-index: 100;
+  &.gratitude {
+    &:hover {
+      color: $gratitude;
     }
-    &:hover #hamburger,
-    &:focus #hamburger {
-      cursor: pointer;
+    &::before {
+      background-color: $gratitude;
+    }
+    &.active {
+      color: $gratitude;
     }
   }
-  &.active .toggleMobile #hamburger {
-    background: white;
-    border-radius: 50%;
-    animation: fadeIn 1s ease;
-    #top-line {
-      animation: rotateDown 0.6s ease-out both;
+  &.foundation {
+    &:hover {
+      color: $foundation;
     }
-    #bottom-line {
-      animation: rotateUp 0.6s ease-out both;
+    &::before {
+      background-color: $foundation;
     }
-    #middle-line {
-      animation: fadeOut 0.6s ease-out forwards;
+    &.active {
+      color: $foundation;
+    }
+  }
+  &.help {
+    &:hover {
+      color: $help;
+    }
+    &::before {
+      background-color: $help;
+    }
+    &.active {
+      color: $help;
     }
   }
 }
+
+#navbarView .navigation ul {
+  gap: 2rem;
+  align-items: center;
+}
+
+#navbarView a.foundationLogo {
+  height: 5rem;
+  width: auto;
+  margin-left: 3rem;
+  img {
+    height: 100%;
+    width: auto;
+    border-radius: 50%;
+  }
+}
+
+#navbarView .toggleMobile {
+  margin-left: 2rem;
+  position: relative;
+  height: 4rem;
+  width: 4rem;
+  #hamburger {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    stroke: rgb(36, 36, 36);
+    transition: stroke 1s ease;
+    z-index: 100;
+  }
+  &:hover #hamburger,
+  &:focus #hamburger {
+    cursor: pointer;
+  }
+}
+
+#navbarView.active .toggleMobile #hamburger {
+  background: white;
+  border-radius: 50%;
+  animation: fadeIn 1s ease;
+  #top-line {
+    animation: rotateDown 0.6s ease-out both;
+  }
+  #bottom-line {
+    animation: rotateUp 0.6s ease-out both;
+  }
+  #middle-line {
+    animation: fadeOut 0.6s ease-out forwards;
+  }
+}
+
+// ---------------------------- keyframes ----------------------------
 
 @keyframes rotateUp {
   0% {
@@ -239,102 +241,113 @@ nav {
   }
 }
 
+@keyframes scaleIn {
+  0% {
+    width: 10px;
+    height: 10px;
+  }
+  100% {
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-20vh);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+// ---------------------------- media smaller screens ----------------------------
+
 @media screen and (min-width: 1023px) and (max-width: 1400px) {
-  nav button.siteLogo {
-    font-size: 1.3rem;
-    span {
-      font-size: 0.4rem;
+  #navbarView button {
+    &.siteLogo {
+      font-size: 1.3rem;
+      span {
+        font-size: 0.4rem;
+      }
+    }
+    &.menuItem {
+      font-size: 0.6rem;
     }
   }
-  nav button.menuItem {
-    font-size: 0.6rem;
-  }
-  nav .navigation ul {
+
+  #navbarView .navigation ul {
     gap: 1rem;
   }
-  nav a.foundationLogo {
+  #navbarView a.foundationLogo {
     height: 4rem;
   }
 }
 
+// ---------------------------- media phones ----------------------------
+
 @media screen and (max-width: 1023px) {
-  nav button.siteLogo {
+  #navbarView button.siteLogo {
     font-size: 1.3rem;
     span {
       font-size: 0.4rem;
     }
   }
-  nav .navigation {
-    place-content: center;
-    // display: none;
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    visibility: hidden;
-  }
 
-  nav.active .navigation {
-    visibility: visible;
-  }
-
-  nav .navigation ul {
-    flex-direction: column;
-    margin: clamp(1rem, 5vh, 7rem) 0;
-    gap: 0;
-    justify-content: space-around;
-  }
-
-  nav button.menuItem {
-    font-weight: 400;
-    font-size: 1.6rem;
-    transform: translateY(0);
-    &.active {
-      font-weight: 700;
+  #navbarView {
+    button.menuItem {
+      font-weight: 400;
+      font-size: 1.6rem;
+      transform: translateY(0);
+      &.active {
+        font-weight: 700;
+      }
+    }
+    &.active button.menuItem {
+      animation: slideDown 1s ease;
     }
   }
 
-  nav.active button.menuItem {
-    animation: slideDown 1s ease;
-  }
-
-  nav.active .navigation ul li {
-    @for $item from 1 through 6 {
-      &:nth-child(#{$item}) {
-        button.menuItem {
-          animation-name: slideDown;
-          // animation: slideDown 1s ease;
-          // animation-duration: calc(0.5s + ( 0,1 * #{$item}));
-          animation-duration: calc(0.4s + (0.1s * #{$item}));
+  #navbarView {
+    .navigation {
+      place-content: center;
+      // display: none;
+      position: absolute;
+      height: 100vh;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      visibility: hidden;
+      ul {
+        flex-direction: column;
+        margin: clamp(1rem, 5vh, 7rem) 0;
+        gap: 0;
+        justify-content: space-around;
+      }
+    }
+    &.active .navigation {
+      visibility: visible;
+      ul li {
+        @for $item from 1 through 6 {
+          &:nth-child(#{$item}) {
+            button.menuItem {
+              animation-name: slideDown;
+              animation-duration: calc(0.4s + (0.1s * #{$item}));
+            }
+          }
         }
       }
     }
   }
 
-  @keyframes slideDown {
-    0% {
-      transform: translateY(-20vh);
-      opacity: 0;
-    }
-    50% {
-      transform: translateY(-10vh);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
-  nav a.foundationLogo {
-    height: 4rem;
-    margin-left: auto;
-  }
-  nav.active .toggleMobile::before {
+  #navbarView.active .toggleMobile::before {
     background: var(--light);
-    background: rgb(227, 227, 227);
+    background: rgb(235, 235, 235);
     width: 500vh;
     height: 500vh;
     position: absolute;
@@ -346,34 +359,37 @@ nav {
     border-radius: 50%;
     animation: scaleIn 1s ease;
   }
+
+  #navbarView a.foundationLogo {
+    height: 4rem;
+    margin-left: auto;
+  }
 }
 
-@keyframes scaleIn {
-  0% {
-    width: 10px;
-    height: 10px;
-  }
-  100% {
-  }
-}
+// ---------------------------- media phones ----------------------------
 
 @media screen and (max-width: 768px) {
-  nav {
+  #navbarView {
     padding: 1rem 0.5rem;
   }
-  nav button.siteLogo {
-    font-size: 1rem;
-    span {
-      font-size: 0.4rem;
+
+  #navbarView button {
+    &.siteLogo {
+      font-size: 1rem;
+      span {
+        font-size: 0.4rem;
+      }
+    }
+    &.menuItem {
+      font-size: 1rem;
     }
   }
-  nav button.menuItem {
-    font-size: 1rem;
-  }
-  nav a.foundationLogo {
+
+  #navbarView a.foundationLogo {
     height: 3rem;
   }
-  nav .toggleMobile {
+
+  #navbarView .toggleMobile {
     margin-left: 0.5rem;
   }
 }

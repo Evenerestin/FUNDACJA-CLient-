@@ -67,7 +67,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <nav class="flex" :class="{ active: openMenu, inactive: !openMenu }">
+  <nav id="navbarView" class="flex" :class="{ active: openMenu, inactive: !openMenu }">
     <router-link to="/">
       <button class="siteLogo flexColumn">Anetka Bieryt<span>Ty też możesz pomóc!</span></button>
     </router-link>
