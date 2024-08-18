@@ -28,7 +28,7 @@ $font: var(--font-orange);
 
 #helpView .content {
   margin: 6rem auto 0 4vw;
-  width: 90vw;
+  width: 70vw;
   div {
     width: 100%;
   }
@@ -97,7 +97,7 @@ $font: var(--font-orange);
   #helpView .content {
     padding: 0 clamp(1rem, 2vw, 8rem);
     margin: 7rem 0 0;
-    width: 80vw;
+    width: 90vw;
     .header {
       align-items: center;
       display: flex;
@@ -107,6 +107,7 @@ $font: var(--font-orange);
       }
       h3 {
         text-align: left;
+        font-weight: 300;
       }
     }
   }
