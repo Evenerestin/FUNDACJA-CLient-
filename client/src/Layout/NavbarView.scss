@@ -315,9 +315,8 @@ $help: var(--accent-orange);
   #navbarView {
     .navigation {
       place-content: center;
-      // display: none;
       position: absolute;
-      height: 100vh;
+      height: 100dvh;
       width: 100%;
       top: 0;
       left: 0;
@@ -391,5 +390,32 @@ $help: var(--accent-orange);
 
   #navbarView .toggleMobile {
     margin-left: 0.5rem;
+  }
+}
+
+// ---------------------------- media phones landscape ----------------------------
+
+@media screen and (max-height: 767px) {
+  #navbarView {
+    padding: 0rem 0.5rem;
+  }
+
+  #navbarView button.menuItem {
+    font-size: 0.8rem;
+  }
+
+  #navbarView .toggleMobile {
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem;
+  }
+
+  #navbarView.active .toggleMobile::before {
+    width: 500vw;
+    height: 500vw;
+  }
+
+  #navbarView a.foundationLogo {
+    height: 2.5rem;
   }
 }

@@ -191,3 +191,15 @@ $accent: var(--accent-green);
     }
   }
 }
+
+// ---------------------------- media phones landscape ----------------------------
+
+@media screen and (max-height: 767px) {
+  #galleryView .modalPopUp {
+    margin: 0;
+    z-index: 100;
+  }
+  #galleryView .modalPopUp .modalImage img {
+    max-height: 95vh;
+  }
+}
