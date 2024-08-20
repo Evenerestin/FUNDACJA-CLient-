@@ -20,10 +20,10 @@ $font: var(--font-orange);
   top: 50%;
   right: 3vw;
   opacity: 1;
-  margin-top: 3.5rem;
+  // margin-top: 3.5rem;
   border-radius: 0;
   object-fit: contain;
-  transform: translateY(-50%);
+  transform: translateY(-42%);
 }
 
 #helpView .content {
@@ -84,7 +84,7 @@ $font: var(--font-orange);
 
 @media screen and (max-width: 767px) {
   #helpView .waves svg {
-    top: 5rem;
+    top: 3rem;
   }
 
   #helpView img {
