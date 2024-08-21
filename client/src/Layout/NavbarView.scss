@@ -395,7 +395,7 @@ $help: var(--accent-orange);
 
 // ---------------------------- media phones landscape ----------------------------
 
-@media screen and (max-height: 767px) {
+@media screen and (max-height: 767px) and (max-width: 1023px) {
   #navbarView {
     padding: 0rem 0.5rem;
   }
