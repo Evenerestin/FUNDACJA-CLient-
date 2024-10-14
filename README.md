@@ -1,8 +1,11 @@
 <p>FUNDACJA - CLIENT</p>
 <h2>
-  Foundation Beneficiary Personal Site <br />
+  Foundation Beneficiary
+</h2>
+<h3>
+  Personal Website <br />
   <a href="https://anetkabieryt.pl">anetkabieryt.pl</a> <br />
-</h1>
+</h3>
 
 <br />
 
